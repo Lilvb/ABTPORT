@@ -8,6 +8,8 @@ A personal portfolio site built with React, GSAP, and Tailwind CSS — featuring
 
 </div>
 
+![Portfolio QR Code](https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://lilvb.github.io/ABTPORT/)
+
 ---
 
 ## Features

@@ -6,7 +6,7 @@ A personal portfolio site built with React, GSAP, and Tailwind CSS — featuring
 
 [![Visit Site](https://img.shields.io/badge/Visit%20Site-854CE6?style=for-the-badge&logoColor=white)](https://lilvb.github.io/ABTPORT/)
 
-![Portfolio QR Code](https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://lilvb.github.io/ABTPORT/)
+![Portfolio QR Code](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lilvb.github.io/ABTPORT/)
 
 </div>
 

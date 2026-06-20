@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root[data-theme="dark"] {
+    --background: 240 28% 5%;
+    --foreground: 220 9% 95%;
+    --card: 231 18% 13%;
+    --card-foreground: 220 9% 95%;
+    --popover: 231 18% 13%;
+    --popover-foreground: 220 9% 95%;
+    --primary: 263 76% 60%;
+    --primary-foreground: 220 9% 95%;
+    --secondary: 231 18% 13%;
+    --secondary-foreground: 220 9% 95%;
+    --muted: 231 18% 13%;
+    --muted-foreground: 220 4% 83%;
+    --accent: 263 76% 60%;
+    --accent-foreground: 220 9% 95%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 4% 83% / 0.1;
+    --input: 231 18% 13%;
+    --ring: 263 76% 60%;
+    --radius: 0.625rem;
+
+    --bg-primary: #090917;
+    --bg-secondary: #1C1E27;
+    --bg-card: #1C1E27;
+    --bg-input: #171721;
+    --text-primary: #F2F3F4;
+    --text-secondary: #D4D5D6;
+    --text-muted: #B1B2B3;
+    --border-color: rgba(212, 213, 214, 0.1);
+  }
+
+  :root[data-theme="light"] {
+    --background: 220 9% 95%;
+    --foreground: 240 28% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 28% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 28% 5%;
+    --primary: 263 76% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 9% 95%;
+    --secondary-foreground: 240 28% 5%;
+    --muted: 220 9% 95%;
+    --muted-foreground: 240 10% 40%;
+    --accent: 263 76% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 40% / 0.1;
+    --input: 0 0% 96%;
+    --ring: 263 76% 60%;
+    --radius: 0.625rem;
+
+    --bg-primary: #F2F3F4;
+    --bg-secondary: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-input: #FFFFFF;
+    --text-primary: #090917;
+    --text-secondary: #4B4B5B;
+    --text-muted: #6B6B7B;
+    --border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(133, 76, 230, 0.3);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .section-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@layer utilities {
+  .typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: #854CE6;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+}
